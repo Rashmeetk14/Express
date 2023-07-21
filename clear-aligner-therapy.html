@@ -19,18 +19,18 @@
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-<body>
+<body class="body" id="body" id="body-text">
   <div class="div-block-314127">
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="cnc-navigation-2 w-nav">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="cnc-navigation-2 w-nav" id="nav-changes">
       <div class="container-160 w-container">
         <a href="index.html" class="brand-11 w-nav-brand"><img src="images/smile.png" loading="lazy" sizes="(max-width: 991px) 100vw, (max-width: 1439px) 19vw, 260px" srcset="images/smile-p-500.png 500w, images/smile-p-800.png 800w, images/smile-p-1080.png 1080w, images/smile.png 1790w" alt="brand logo white" class="brand-logo-white"><img src="images/smile.png" loading="lazy" sizes="(max-width: 991px) 100vw, (max-width: 1439px) 19vw, 260px" srcset="images/smile-p-500.png 500w, images/smile-p-800.png 800w, images/smile-p-1080.png 1080w, images/smile.png 1790w" alt="brand logo " class="brand-logo-blue"></a>
         <nav role="navigation" class="nav-menu-11 w-nav-menu">
-          <a href="index.html" class="navlink-2 w-nav-link">Home</a>
+          <a href="index.html"  id="homeToggle_theme" class="navlink-2 w-nav-link">Home</a>
           <div data-hover="true" data-delay="0" class="dropdown-30 _1 w-dropdown">
             <div class="dropdown-31 w-dropdown-toggle">
-              <div class="icon-47 _1 w-icon-dropdown-toggle"></div>
+              <div class="icon-47 _1 w-icon-dropdown-toggle" id="aboutToggleIcon"></div>
               <div class="text-block-15894">
-                <a href="#" class="link-25 _1">About</a>
+                <a href="#" class="link-25 _1" id="aboutToggle_theme">About</a>
               </div>
             </div>
             <nav class="navigation-dropdown-4 left center _1 w-dropdown-list">
@@ -57,9 +57,9 @@
           </div>
           <div data-hover="true" data-delay="0" class="dropdown-30 _1 w-dropdown">
             <div class="dropdown-31 w-dropdown-toggle">
-              <div class="icon-47 _1 w-icon-dropdown-toggle"></div>
+              <div class="icon-47 _1 w-icon-dropdown-toggle" id="serviceToggleIcon"></div>
               <div class="text-block-15894">
-                <a href="#" class="link-25 _1">Services</a>
+                <a href="#" class="link-25 _1" id="serviceToggle_theme">Services</a>
               </div>
             </div>
             <nav class="navigation-dropdown-4 left w-dropdown-list">
@@ -246,7 +246,7 @@
             <div class="dropdown-31 _1 w-dropdown-toggle">
               <div class="icon-47 _1 _2 w-icon-dropdown-toggle"></div>
               <div class="text-block-15894">
-                <a href="patients-info.html" class="link-25 _1">Patients Information </a>
+                <a href="patients-info.html" class="link-25 _1" id="patientToggle_theme">Patients Information </a>
               </div>
             </div>
             <nav class="navigation-dropdown-4 left center _2 hide1 w-dropdown-list">
@@ -273,9 +273,9 @@
           </div>
           <div data-hover="true" data-delay="0" class="dropdown-30 _1 _2 w-dropdown">
             <div class="dropdown-31 w-dropdown-toggle">
-              <div class="icon-47 _1 w-icon-dropdown-toggle"></div>
+              <div class="icon-47 _1 w-icon-dropdown-toggle" id="financalToggle"></div>
               <div class="text-block-15894">
-                <a href="financial-page.html" class="link-25 _1">Financials</a>
+                <a href="financial-page.html" class="link-25 _1" id="financialToggle_theme">Financials</a>
               </div>
             </div>
             <nav class="navigation-dropdown-4 left center _1 w-dropdown-list">
@@ -296,9 +296,9 @@
           </div>
           <div data-hover="true" data-delay="0" class="dropdown-30 _1 hide w-dropdown">
             <div class="dropdown-31 w-dropdown-toggle">
-              <div class="icon-47 _1 _2 w-icon-dropdown-toggle"></div>
+              <div class="icon-47 _1 _2 w-icon-dropdown-toggle" id="financalToggle"></div>
               <div class="text-block-15894">
-                <a href="financial-page.html" class="link-25 _1">Financials</a>
+                <a href="financial-page.html" class="link-25 _1" id="financialToggle_theme">Financials</a>
               </div>
             </div>
             <nav class="navigation-dropdown-4 left center _3 hide1 w-dropdown-list">
@@ -329,7 +329,7 @@
             </div>
             <div class="button-side"></div>
           </a>
-          <a href="contact-us.html" class="navlink-2">Contact</a>
+          <a href="contact-us.html" class="navlink-2" id="contacToggle_theme">Contact</a>
         </nav>
         <div class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>

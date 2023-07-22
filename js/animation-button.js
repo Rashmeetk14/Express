@@ -1,50 +1,160 @@
-function clickHandler()
-        {
+// function clickHandler()
+//         {
 
-          //dark mode and light mode
-          let main = document.getElementById('body');
-          let nav = document.getElementById('nav-changes');
-          main.classList.toggle("body-change");
-          nav.classList.toggle("nav-change");
+//           //dark mode and light mode
+//           let main = document.getElementById('body');
+//           let nav = document.getElementById('nav-changes');
+//           main.classList.toggle("body-change");
+//           nav.classList.toggle("nav-change");
+
+//           let theme = body.classList.toggle("navlink-2_1")
+//           let navlink = document.getElementById("nav");
+//           if(theme){
+//             navlink.classList.add('navlink-2_1');
+//           }else{
+//             navlink.classList.remove('navlink-2_1')
+//           }
+// }
+
+// function clickHandler()
+//         {
+
+//           //dark mode and light mode
+//           let main = document.getElementById('body');
+//           let nav = document.getElementById('nav-changes');
+//           main.classList.toggle("body-change");
+//           nav.classList.toggle("nav-change");
 
 
-          let homeElement=document.getElementById("homeToggle_theme");
-          let aboutElement=document.getElementById("aboutToggle_theme");
-          let aboutToggleIcon = document.getElementById('aboutToggleIcon');
-          let serviceToggle_theme = document.getElementById('serviceToggle_theme');
-          let serviceToggleIcon = document.getElementById('serviceToggleIcon');
-          let patientToggle_theme = document.getElementById('patientToggle_theme');
-          let financialToggle_theme = document.getElementById('financialToggle_theme');
-          let financalToggle = document.getElementById('financalToggle');
-          let contacToggle_theme = document.getElementById('contacToggle_theme');
-          // let aboutTeamPageSection = documment.getElementById('about-teampage-section')
+//           let homeElement=document.getElementById("homeToggle_theme");
+//           let aboutElement=document.getElementById("aboutToggle_theme");
+//           let aboutToggleIcon = document.getElementById('aboutToggleIcon');
+//           let serviceToggle_theme = document.getElementById('serviceToggle_theme');
+//           let serviceToggleIcon = document.getElementById('serviceToggleIcon');
+//           let patientToggle_theme = document.getElementById('patientToggle_theme');
+//           let financialToggle_theme = document.getElementById('financialToggle_theme');
+//           let financalToggle = document.getElementById('financalToggle');
+//           let contacToggle_theme = document.getElementById('contacToggle_theme');
+//          //let aboutTeamPageSection = documment.getElementById('about-teampage-section')
           
-          // let insideNav=document.querySelector(".link-25")[0];
-          // let insideNavIcon=document.querySelector(".icon-47")[0];
+//           // let insideNav=document.querySelector(".link-25")[0];
+//           // let insideNavIcon=document.querySelector(".icon-47")[0];
 
 
-          homeElement.classList.toggle("navlink-2_1");
-          aboutElement.classList.toggle('navlink-2_1');
-          aboutToggleIcon.classList.toggle('navlink-2_1');
-          serviceToggle_theme.classList.toggle('navlink-2_1');
-          serviceToggleIcon.classList.toggle('navlink-2_1');
-          patientToggle_theme.classList.toggle('navlink-2_1');
-          financialToggle_theme.classList.toggle('navlink-2_1');
-          financalToggle.classList.toggle('navlink-2_1');
-          contacToggle_theme.classList.toggle('navlink-2_1');
-          // aboutTeamPageSection.classList.toggle('navlink-2_1');
-          // logoBrand.src.toggle('images/SmileWhite.png')
-         let newImg =  document.querySelector('img[name="Whitemode-smileLogo"]');
-         newImg.src = 'images/Whitemode-smileLogo.png';
-         newImg.sizes="(max-width: 991px) 100vw, (max-width: 1439px) 19vw, 260px";
-         newImg.srcset="images/Whitemode-smileLogo.png 500w, images/Whitemode-smileLogo.png 800w, images/Whitemode-smileLogo.png 1080w, images/Whitemode-smileLogo.png 1790w"
-          // insideNav.classList.toggle("link-25_1");
-          // insideNavIcon.classList.toggle("icon-47_1");
+//           homeElement.classList.toggle("navlink-2_1");
+//           aboutElement.classList.toggle('navlink-2_1');
+//           aboutToggleIcon.classList.toggle('navlink-2_1');
+//           serviceToggle_theme.classList.toggle('navlink-2_1');
+//           serviceToggleIcon.classList.toggle('navlink-2_1');
+//           patientToggle_theme.classList.toggle('navlink-2_1');
+//           financialToggle_theme.classList.toggle('navlink-2_1');
+//           financalToggle.classList.toggle('navlink-2_1');
+//           contacToggle_theme.classList.toggle('navlink-2_1');
+//           // aboutTeamPageSection.classList.toggle('navlink-2_1');
+//           // logoBrand.src.toggle('images/SmileWhite.png')
+//          let newImg =  document.querySelector('img[name="Whitemode-smileLogo"]');
+//          newImg.src = 'images/Whitemode-smileLogo.png';
+//          newImg.sizes="(max-width: 991px) 100vw, (max-width: 1439px) 19vw, 260px";
+//          newImg.srcset="images/Whitemode-smileLogo.png 500w, images/Whitemode-smileLogo.png 800w, images/Whitemode-smileLogo.png 1080w, images/Whitemode-smileLogo.png 1790w"
+//           // insideNav.classList.toggle("link-25_1");
+//           // insideNavIcon.classList.toggle("icon-47_1");
 
          
-        }
+//         }  
 
-      
+
+// Function to toggle between dark and light mode
+function clickHandler() {
+  // Dark mode and light mode
+  let main = document.getElementById('body');
+  let nav = document.getElementById('nav-changes');
+  main.classList.toggle("body-change");
+  nav.classList.toggle("nav-change");
+
+  // Store the dark mode preference in session storage
+  const isDarkMode = main.classList.contains("body-change");
+  sessionStorage.setItem("preferredTheme", isDarkMode ? "dark" : "light");
+
+  let homeElement = document.getElementById("homeToggle_theme");
+  let aboutElement = document.getElementById("aboutToggle_theme");
+  let aboutToggleIcon = document.getElementById('aboutToggleIcon');
+  let serviceToggle_theme = document.getElementById('serviceToggle_theme');
+  let serviceToggleIcon = document.getElementById('serviceToggleIcon');
+  let patientToggle_theme = document.getElementById('patientToggle_theme');
+  let financialToggle_theme = document.getElementById('financialToggle_theme');
+  let financalToggle = document.getElementById('financalToggle');
+  let contacToggle_theme = document.getElementById('contacToggle_theme');
+  // Add more elements here
+
+  homeElement.classList.toggle("navlink-2_1");
+  aboutElement.classList.toggle("navlink-2_1");
+  aboutToggleIcon.classList.toggle('navlink-2_1');
+  serviceToggle_theme.classList.toggle('navlink-2_1');
+  serviceToggleIcon.classList.toggle('navlink-2_1');
+  patientToggle_theme.classList.toggle('navlink-2_1');
+  financialToggle_theme.classList.toggle('navlink-2_1');
+  financalToggle.classList.toggle('navlink-2_1');
+  contacToggle_theme.classList.toggle('navlink-2_1');
+  // Add more elements here
+}
+
+// Apply the user's preferred theme on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const preferredTheme = sessionStorage.getItem("preferredTheme");
+
+  if (preferredTheme === "dark") {
+    document.body.class
+    document.body.classList.add("body-change");
+    // Apply dark mode styles to other elements related to dark mode (adjust based on your HTML structure)
+    let homeElement = document.getElementById("homeToggle_theme");
+    let aboutElement = document.getElementById("aboutToggle_theme");
+    let aboutToggleIcon = document.getElementById('aboutToggleIcon');
+    let serviceToggle_theme = document.getElementById('serviceToggle_theme');
+    let serviceToggleIcon = document.getElementById('serviceToggleIcon');
+    let patientToggle_theme = document.getElementById('patientToggle_theme');
+    let financialToggle_theme = document.getElementById('financialToggle_theme');
+    let financalToggle = document.getElementById('financalToggle');
+    let contacToggle_theme = document.getElementById('contacToggle_theme');
+    // Add more elements here
+
+    homeElement.classList.add("navlink-2_1");
+    aboutElement.classList.add("navlink-2_1");
+    aboutToggleIcon.classList.toggle('navlink-2_1');
+    serviceToggle_theme.classList.toggle('navlink-2_1');
+    serviceToggleIcon.classList.toggle('navlink-2_1');
+    patientToggle_theme.classList.toggle('navlink-2_1');
+    financialToggle_theme.classList.toggle('navlink-2_1');
+    financalToggle.classList.toggle('navlink-2_1');
+    contacToggle_theme.classList.toggle('navlink-2_1');
+    // Add more elements here
+  } else {
+    // The default theme is light mode
+    document.body.classList.remove("body-change");
+    let homeElement = document.getElementById("homeToggle_theme");
+    let aboutElement = document.getElementById("aboutToggle_theme");
+    let aboutToggleIcon = document.getElementById('aboutToggleIcon');
+    let serviceToggle_theme = document.getElementById('serviceToggle_theme');
+    let serviceToggleIcon = document.getElementById('serviceToggleIcon');
+    let patientToggle_theme = document.getElementById('patientToggle_theme');
+    let financialToggle_theme = document.getElementById('financialToggle_theme');
+    let financalToggle = document.getElementById('financalToggle');
+    let contacToggle_theme = document.getElementById('contacToggle_theme');
+    // Add more elements here
+
+    homeElement.classList.remove("navlink-2_1");
+    aboutElement.classList.remove("navlink-2_1");
+    aboutToggleIcon.classList.toggle('navlink-2_1');
+    serviceToggle_theme.classList.toggle('navlink-2_1');
+    serviceToggleIcon.classList.toggle('navlink-2_1');
+    patientToggle_theme.classList.toggle('navlink-2_1');
+    financialToggle_theme.classList.toggle('navlink-2_1');
+    financalToggle.classList.toggle('navlink-2_1');
+    contacToggle_theme.classList.toggle('navlink-2_1');
+  }
+});
+
+
+      // refresh button
         function clickHandler2(){
           setTimeout(() => {
             document.location.reload();

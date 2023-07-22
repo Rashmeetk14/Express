@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (preferredTheme === "dark") {
     document.body.class
     document.body.classList.add("body-change");
-    // Apply dark mode styles to other elements related to dark mode (adjust based on your HTML structure)
+    // Apply dark mode styles to other elements related to dark mode (adjust based on your HTML structure dfsd)
     let homeElement = document.getElementById("homeToggle_theme");
     let aboutElement = document.getElementById("aboutToggle_theme");
     let aboutToggleIcon = document.getElementById('aboutToggleIcon');
